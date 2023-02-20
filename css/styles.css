@@ -108,9 +108,16 @@
 
 .menu-container>[class$="-image"] {
     background-color: #fff;
-    transition: transform 0.5s ease-in-out;
 }
 
-.menu-container>[class$="-image"]:hover {
-    transform: rotate(10deg);
+.menu-container img {
+    max-height: 30vh;
+    width: auto;
+    overflow: hidden;
+}
+
+@media (max-width: 768px) and (orientation: landscape) {
+    .menu-container img {
+        max-height: 50vh;
+    }
 }
