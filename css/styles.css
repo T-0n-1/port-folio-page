@@ -89,6 +89,28 @@
     background-color: rgba(255, 255, 255, 0.8);
     text-align: center;
     padding: 0.2em;
+}
+
+.menu-container>[class$="-text"] {
+    background-color: #000;
+    color: #fff;
     font-size: 10em;
     font-weight: bolder;
+    text-shadow: 2px 2px 4px rgba(166, 42, 180, 0.5);
+    transition: text-shadow, transform 0.5s ease-in-out;
+}
+
+.menu-container>[class$="-text"]:hover {
+    text-shadow: 4px 4px 45px rgba(7, 141, 204, 0.5),
+        -4px -4px 80px rgba(255, 255, 255, 0.5);
+    transform: rotate(-10deg);
+}
+
+.menu-container>[class$="-image"] {
+    background-color: #fff;
+    transition: transform 0.5s ease-in-out;
+}
+
+.menu-container>[class$="-image"]:hover {
+    transform: rotate(10deg);
 }
