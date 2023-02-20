@@ -1,0 +1,79 @@
+/* Main container */
+.header {
+    grid-area: header;
+}
+
+.main {
+    grid-area: main;
+}
+
+.nav {
+    grid-area: nav;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.grid-container {
+    display: none;
+    grid-template-areas:
+        'header header header header header nav'
+        'main main main main main main'
+        'footer footer footer footer footer footer';
+    gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+}
+
+.grid-container>div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+/* Menu container */
+.work-text {
+    grid-area: work-text;
+}
+
+.work-image {
+    grid-area: work-image;
+}
+
+.studies-image {
+    grid-area: studies-image;
+}
+
+.studies-text {
+    grid-area: studies-text;
+}
+
+.interests-text {
+    grid-area: interests-text;
+}
+
+.interests-image {
+    grid-area: interests-image;
+}
+
+.menu-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        'work-text work-image'
+        'studies-image studies-text'
+        'interests-text interests-image';
+    gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+}
+
+.menu-container>div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
