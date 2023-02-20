@@ -36,6 +36,7 @@
 /* Menu container */
 .work-text {
     grid-area: work-text;
+    text-align: center;
 }
 
 .work-image {
@@ -48,10 +49,12 @@
 
 .studies-text {
     grid-area: studies-text;
+    text-align: center;
 }
 
 .interests-text {
     grid-area: interests-text;
+    text-align: center;
 }
 
 .interests-image {
@@ -69,11 +72,23 @@
     gap: 10px;
     background-color: #2196F3;
     padding: 10px;
+    height: 100vh;
+}
+
+@media (max-width: 768px) and (orientation: landscape) {
+    .menu-container {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+            'work-text studies-image interests-test'
+            'work-image studies-text interests-image';
+    }
 }
 
 .menu-container>div {
     background-color: rgba(255, 255, 255, 0.8);
     text-align: center;
-    padding: 20px 0;
-    font-size: 30px;
+    padding: 0.2em;
+    font-size: 10em;
+    font-weight: bolder;
 }
