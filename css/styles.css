@@ -70,7 +70,6 @@
         'studies-image studies-text'
         'interests-text interests-image';
     gap: 10px;
-    background-color: #2196F3;
     height: 100vh;
 }
 
