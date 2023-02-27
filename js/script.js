@@ -16,7 +16,7 @@ if (style.cursor === 'none') {
         setTimeout(function () {
             main.style.display = "none";
             nav.style.display = "grid";
-        }, 300);
+        }, 500);
 
     });
 
