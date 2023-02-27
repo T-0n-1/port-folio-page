@@ -2,19 +2,15 @@
 .header {
     grid-area: header;
 }
-
 .main {
     grid-area: main;
 }
-
 .nav {
     grid-area: nav;
 }
-
 .footer {
     grid-area: footer;
 }
-
 .grid-container {
     display: none;
     grid-template-areas:
@@ -25,42 +21,34 @@
     background-color: #2196F3;
     padding: 10px;
 }
-
 .grid-container>div {
     background-color: rgba(255, 255, 255, 0.8);
     text-align: center;
     padding: 20px 0;
     font-size: 30px;
 }
-
 /* Menu container */
 .work-text {
     grid-area: work-text;
     text-align: center;
 }
-
 .work-image {
     grid-area: work-image;
 }
-
 .studies-image {
     grid-area: studies-image;
 }
-
 .studies-text {
     grid-area: studies-text;
     text-align: center;
 }
-
 .interests-text {
     grid-area: interests-text;
     text-align: center;
 }
-
 .interests-image {
     grid-area: interests-image;
 }
-
 .menu-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -72,50 +60,70 @@
     gap: 10px;
     height: 100vh;
 }
-
 @media (max-width: 768px) and (orientation: landscape) {
     .menu-container {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         grid-template-areas:
-            'work-text studies-image interests-test'
+            'work-text studies-image interests-text'
             'work-image studies-text interests-image';
     }
 }
-
+@media (max-width: 768px) {
+    .menu-container {
+        gap: 2px;
+        height: 90vh;
+        align-items: stretch;
+    }
+}
 .menu-container>div {
     background-color: rgba(255, 255, 255, 0.8);
     text-align: center;
+    align-items: center;
     padding: 0.2em;
 }
-
 .menu-container>[class$="-text"] {
     background-color: #000;
     color: #fff;
     font-size: 10em;
     font-weight: bolder;
     text-shadow: 2px 2px 4px rgba(166, 42, 180, 0.5);
+    transition: text-shadow, -webkit-transform 0.5s ease-in-out;
     transition: text-shadow, transform 0.5s ease-in-out;
+    transition: text-shadow, transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
 }
-
+@media (max-width: 768px) {
+    .menu-container>[class$="-text"] {
+        font-size: 2em;
+    }
+}
 .menu-container>[class$="-text"]:hover {
     text-shadow: 4px 4px 45px rgba(7, 141, 204, 0.5),
         -4px -4px 80px rgba(255, 255, 255, 0.5);
+    -webkit-transform: rotate(-10deg);
     transform: rotate(-10deg);
 }
-
 .menu-container>[class$="-image"] {
     background-color: #fff;
 }
-
 .menu-container img {
     max-height: 30vh;
     width: auto;
     overflow: hidden;
 }
-
-@media (max-width: 768px) and (orientation: landscape) {
+@media (max-width: 768px) and (orientation: portrait) {
     .menu-container img {
-        max-height: 50vh;
+        max-height: 30vh;
+        width: 48vw;
+    }
+
+    .studies-image img {
+        margin-top: 4vh;
     }
 }
+@media (max-width: 768px) and (orientation: landscape) {
+    .menu-container img {
+        max-height: 47vh;
+    }
+}
+/*# sourceMappingURL=styles.css.map */
