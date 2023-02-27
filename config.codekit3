@@ -93,7 +93,7 @@
       "oAP" : "\/js\/script.js",
       "oF" : 0,
       "sC" : 3,
-      "tS" : 1
+      "tS" : 0
     },
     "\/js\/script.js.map" : {
       "cB" : 0,
@@ -1459,7 +1459,7 @@
       "minifierStyle" : 0,
       "sourceMapStyle" : 1,
       "syntaxCheckerStyle" : 3,
-      "transpilerStyle" : 1
+      "transpilerStyle" : 0
     },
     "languageDefaultsJSON" : {
       "autoOutputAction" : 0,
