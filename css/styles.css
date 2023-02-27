@@ -118,7 +118,11 @@
     }
 
     .studies-image img {
-        margin-top: 4vh;
+        margin-top: 4.5vh;
+    }
+
+    .interests-image img {
+        margin-top: 2vh;
     }
 }
 @media (max-width: 768px) and (orientation: landscape) {

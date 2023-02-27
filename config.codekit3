@@ -94,6 +94,14 @@
       "oF" : 0,
       "sC" : 3,
       "tS" : 1
+    },
+    "\/js\/script.js.map" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/js\/script.js.map",
+      "oF" : 0
     }
   },
   "hooks" : [
