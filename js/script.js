@@ -17,33 +17,21 @@ function toNav() {
     main.style.display = "none";
 }
 
-/* TO CHECK WHETHER THE CURSOR IS HIDDEN OR NOT */
-let element = document.documentElement;
-let style = getComputedStyle(element);
-if (style.cursor === 'none') {
-    // The cursor is hidden
-    navbutton.addEventListener("touchstart", function () {
-        navbutton.style.transform = 'rotate(-10deg)';
-        setTimeout(toNav, 10000);
-    });
-    mainbutton1.addEventListener("touchstart", function () {
-        mainbutton1.style.transform = 'rotate(-10deg)';
-        setTimeout(toMain, 10000);
-    });
-    mainbutton2.addEventListener("touchstart", function () {
-        mainbutton2.style.transform = 'rotate(-10deg)';
-        setTimeout(toMain, 10000);
-    });
-    mainbutton3.addEventListener("touchstart", function () {
-        mainbutton3.style.transform = 'rotate(-10deg)';
-        setTimeout(toMain, 30000);
-    });
-} else {
-    // The cursor is visible
-    navbutton.addEventListener("click", toNav);
-    mainbutton1.addEventListener("click", toMain);
-    mainbutton2.addEventListener("click", toMain);
-    mainbutton3.addEventListener("click", toMain);
-}
+navbutton.addEventListener("touchstart", function () {
+    navbutton.style.transform = 'rotate(-10deg)';
+    setTimeout(toNav, 700);
+});
+mainbutton1.addEventListener("touchstart", function () {
+    mainbutton1.style.transform = 'rotate(-10deg)';
+    setTimeout(toMain, 700);
+});
+mainbutton2.addEventListener("touchstart", function () {
+    mainbutton2.style.transform = 'rotate(-10deg)';
+    setTimeout(toMain, 700);
+});
+mainbutton3.addEventListener("touchstart", function () {
+    mainbutton3.style.transform = 'rotate(-10deg)';
+    setTimeout(toMain, 700);
+});
 
 //# sourceMappingURL=script.js.map
