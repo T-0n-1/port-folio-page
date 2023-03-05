@@ -17,7 +17,7 @@ function toNav() {
     main.style.display = "none";
 }
 
-navbutton.addEventListener("touchstart", function () {
+navbutton.addEventListener("click", function () {
     navbutton.style.transform = 'rotate(-10deg)';
     setTimeout(function () {
         toNav();
@@ -25,7 +25,7 @@ navbutton.addEventListener("touchstart", function () {
     }, 700);
 });
 
-mainbutton1.addEventListener("touchstart", function () {
+mainbutton1.addEventListener("click", function () {
     mainbutton1.style.transform = 'rotate(-10deg)';
     setTimeout(function () {
         toMain();
@@ -33,7 +33,7 @@ mainbutton1.addEventListener("touchstart", function () {
     }, 700);
 });
 
-mainbutton2.addEventListener("touchstart", function () {
+mainbutton2.addEventListener("click", function () {
     mainbutton2.style.transform = 'rotate(-10deg)';
     setTimeout(function () {
         toMain();
@@ -41,7 +41,7 @@ mainbutton2.addEventListener("touchstart", function () {
     }, 700);
 });
 
-mainbutton3.addEventListener("touchstart", function () {
+mainbutton3.addEventListener("click", function () {
     mainbutton3.style.transform = 'rotate(-10deg)';
     setTimeout(function () {
         toMain();
