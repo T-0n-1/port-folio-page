@@ -63,6 +63,30 @@
       "q" : 90,
       "rq" : 75
     },
+    "\/images\/logo.png" : {
+      "ft" : 32768,
+      "iS" : 1717761,
+      "oA" : 0,
+      "oAP" : "\/images\/logo.png",
+      "oF" : 0,
+      "oIPL" : 1,
+      "opt" : 1,
+      "oT" : 1,
+      "ou" : "lpckwebp-photo",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/images\/logo.webp" : {
+      "ft" : 8388608,
+      "iS" : 35942,
+      "oA" : 0,
+      "oAP" : "\/images\/logo.webp",
+      "oF" : 0,
+      "oIPL" : 1,
+      "opt" : 1,
+      "ou" : "lpckwebp-default",
+      "rq" : 75
+    },
     "\/images\/me.png" : {
       "ft" : 32768,
       "iS" : 124698,

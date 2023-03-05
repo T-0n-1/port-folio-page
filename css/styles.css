@@ -1,6 +1,31 @@
 /* Main container */
 .header {
     grid-area: header;
+    display: flex;
+    flex-direction: row;
+}
+.header>img {
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
+    z-index: 1;
+}
+@media (min-width: 769px) || (orientation: landscape) {
+    .header>img {
+        margin-right: 2em;
+    }
+
+    .header>div 2nd-child {
+        text-align: right;
+        ;
+    }
+}
+.header>div p {
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    font-weight: bold;
+    z-index: 1;
 }
 .main {
     grid-area: main;
@@ -125,7 +150,7 @@
         margin-top: 4vh;
     }
 }
-@media (max-width: 768px) and (orientation: landscape) {
+@media (max-width: 768px) OR (orientation: landscape) {
     .menu-container img {
         max-height: 47vh;
     }
