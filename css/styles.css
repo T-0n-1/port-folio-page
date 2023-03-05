@@ -48,9 +48,9 @@
         'header header header header header nav'
         'main main main main main main'
         'footer footer footer footer footer footer';
-    gap: 10px;
+    gap: 2px;
     background-color: #2196F3;
-    padding: 10px;
+    padding: 5px;
 }
 .grid-container>div {
     background-color: rgba(255, 255, 255, 0.8);
@@ -156,9 +156,9 @@
         margin-top: 4vh;
     }
 }
-@media (max-width: 768px) OR (orientation: landscape) {
+@media (max-width: 768px) and (orientation: landscape) {
     .menu-container img {
-        max-height: 47vh;
+        max-height: 50vh;
     }
 }
 /*# sourceMappingURL=styles.css.map */
