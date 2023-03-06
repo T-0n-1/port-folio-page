@@ -7,6 +7,7 @@ let menubutton = document.getElementById("menubutton");
 let mainbutton1 = document.getElementById("mainbutton1");
 let mainbutton2 = document.getElementById("mainbutton2");
 let mainbutton3 = document.getElementById("mainbutton3");
+let list = document.getElementById("list");
 let menuopen = false;
 
 function toMain() {
@@ -33,6 +34,7 @@ navbutton.addEventListener("click", function () {
         setTimeout(function () {
             menubutton.classList.remove("fa-bars");
             menubutton.classList.add("fa-times");
+            list.classList.remove('display-none');
             menuopen = true;
         }, 500);
     } else {
@@ -40,6 +42,7 @@ navbutton.addEventListener("click", function () {
         setTimeout(function () {
             menubutton.classList.remove("fa-times");
             menubutton.classList.add("fa-bars");
+            list.classList.add('display-none');
             menuopen = false;
             /*toNav();*/
         }, 500);
