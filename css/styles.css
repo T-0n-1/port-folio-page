@@ -59,10 +59,15 @@ a {
 }
 .contacts {
     color: #000;
-    font-size: 4.5rem;
+    font-size: 2.1rem;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+}
+@media (min-width: 769px) {
+    .contacts {
+        font-size: 4.5rem;
+    }
 }
 .grid-container {
     display: none;
