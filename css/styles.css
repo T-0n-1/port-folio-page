@@ -108,8 +108,8 @@ a {
     }
 
     .contacts>a:hover {
-        -webkit-transform: scale(2, 3);
-        transform: scale(2, 3);
+        -webkit-transform: scale(3, 3);
+        transform: scale(3, 3);
     }
 }
 
