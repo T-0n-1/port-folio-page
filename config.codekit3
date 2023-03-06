@@ -37,6 +37,18 @@
       "oAP" : "\/css\/styles.css.map",
       "oF" : 0
     },
+    "\/css\/wickedcss.min.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 1,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 1,
+      "oA" : 0,
+      "oAP" : "\/css\/wickedcss.min.css",
+      "oF" : 0,
+      "pg" : 1
+    },
     "\/images\/coffee and code.jpg" : {
       "ft" : 16384,
       "iS" : 129223,
