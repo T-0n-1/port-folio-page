@@ -12,6 +12,11 @@ let mainwork = document.getElementById("mainwork");
 let mainstudies = document.getElementById("mainstudies");
 let maininterests = document.getElementById("maininterests");
 let menuopen = false;
+let phone = document.getElementById("phone");
+let mail = document.getElementById("mail");
+let github = document.getElementById("github");
+let linkedin = document.getElementById("linkedin");
+let home = document.getElementById("home");
 
 function toWork() {
     toMain();
@@ -41,7 +46,7 @@ function toMain() {
 
 navbutton.addEventListener("click", function () {
     if (menuopen == false) {
-        navbutton.style.transform = 'rotate(360deg)'; // Reset rotation angle and apply new rotation angle
+        navbutton.style.transform = 'rotate(360deg)';
         setTimeout(function () {
             menubutton.classList.remove("fa-bars");
             menubutton.classList.add("fa-times");
@@ -49,7 +54,7 @@ navbutton.addEventListener("click", function () {
             menuopen = true;
         }, 500);
     } else {
-        navbutton.style.transform = 'rotate(-360deg)'; // Reset rotation angle and apply new rotation angle
+        navbutton.style.transform = 'rotate(-360deg)';
         setTimeout(function () {
             menubutton.classList.remove("fa-times");
             menubutton.classList.add("fa-bars");
@@ -63,7 +68,7 @@ mainbutton1.addEventListener("click", function () {
     mainbutton1.style.transform = 'rotate(-10deg)';
     setTimeout(function () {
         toWork();
-        mainbutton1.style.transform = 'none'; // reset the transform property
+        mainbutton1.style.transform = 'none';
     }, 700);
 });
 
@@ -71,7 +76,7 @@ mainbutton2.addEventListener("click", function () {
     mainbutton2.style.transform = 'rotate(-10deg)';
     setTimeout(function () {
         toStudies();
-        mainbutton2.style.transform = 'none'; // reset the transform property
+        mainbutton2.style.transform = 'none';
     }, 700);
 });
 
@@ -79,8 +84,53 @@ mainbutton3.addEventListener("click", function () {
     mainbutton3.style.transform = 'rotate(-10deg)';
     setTimeout(function () {
         toInterests();
-        mainbutton3.style.transform = 'none'; // reset the transform property
+        mainbutton3.style.transform = 'none';
     }, 700);
+});
+
+phone.addEventListener("click", function (event) {
+    event.preventDefault();
+    phone.classList.add('shake');
+    setTimeout(function () {
+        window.location.href = event.target.href;
+        phone.classList.remove('shake');
+    }, 1200);
+});
+
+mail.addEventListener("click", function (event) {
+    event.preventDefault();
+    mail.classList.add('spinner');
+    setTimeout(function () {
+        window.location.href = event.target.href;
+        mail.classList.remove('spinner');
+    }, 2000);
+});
+
+github.addEventListener("click", function (event) {
+    event.preventDefault();
+    github.classList.add('fadeOut');
+    setTimeout(function () {
+        window.open(event.target.href, '_blank');
+        github.classList.remove('fadeOut');
+    }, 1200);
+});
+
+linkedin.addEventListener("click", function (event) {
+    event.preventDefault();
+    linkedin.classList.add('heartbeat');
+    setTimeout(function () {
+        window.open(event.target.href, '_blank');
+        linkedin.classList.remove('heartbeat');
+    }, 1500);
+});
+
+home.addEventListener("click", function (event) {
+    event.preventDefault();
+    home.classList.add('zoomerOut');
+    setTimeout(function () {
+        window.location.href = event.target.href;
+        home.classList.remove('zoomerOut');
+    }, 800);
 });
 
 //# sourceMappingURL=script.js.map
