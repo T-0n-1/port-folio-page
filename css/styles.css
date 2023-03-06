@@ -69,6 +69,15 @@ a {
         font-size: 4.5rem;
     }
 }
+.contacts>a {
+    transition: -webkit-transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+.contacts>a:hover {
+    -webkit-transform: scale(2, 3);
+    transform: scale(2, 3);
+}
 .main>p {
     padding: 0 2em;
     font-size: 0.5rem;
