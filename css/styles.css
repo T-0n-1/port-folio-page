@@ -17,6 +17,12 @@
     }
 }
 
+@media (min-width: 769px) {
+    .main p {
+        margin: 0 4em;
+    }
+}
+
 /* Main container */
 
 .header {
