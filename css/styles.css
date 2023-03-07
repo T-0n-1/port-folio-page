@@ -130,6 +130,17 @@
     z-index: -1;
 }
 
+@media (max-width: 768px) {
+
+    #mainwork::before,
+    #mainstudies::before {
+        background-attachment: fixed;
+        background-position-x: center;
+        background-position-y: 30vh;
+        background-size: contain;
+    }
+}
+
 a {
     text-decoration: none;
     color: #000;
