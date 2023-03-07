@@ -17,6 +17,19 @@ let mail = document.getElementById("mail");
 let github = document.getElementById("github");
 let linkedin = document.getElementById("linkedin");
 let home = document.getElementById("home");
+let lastScrollTop = 0;
+
+window.addEventListener('scroll', function () {
+    let currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    if (currentScrollTop > lastScrollTop) {
+        // Scrolling down
+        nav.classList.add('hide');
+    } else {
+        // Scrolling up
+        nav.classList.remove('hide');
+    }
+    lastScrollTop = currentScrollTop;
+});
 
 function toWork() {
     toMain();
@@ -51,6 +64,10 @@ navbutton.addEventListener("click", function () {
             menubutton.classList.remove("fa-bars");
             menubutton.classList.add("fa-times");
             list.classList.remove('display-none');
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
             menuopen = true;
         }, 500);
     } else {
@@ -129,7 +146,9 @@ home.addEventListener("click", function (event) {
     home.classList.add('zoomerOut');
     setTimeout(function () {
         window.location.href = event.target.href;
-        home.classList.remove('zoomerOut');
+        setTimeout(function () {
+            home.classList.remove('zoomerOut');
+        }, 100);
     }, 800);
 });
 
