@@ -3,6 +3,12 @@
     word-spacing: 0.3em;
 }
 
+#header-image {
+    max-height: 210px;
+    width: auto;
+    border-radius: 30%;
+}
+
 @media (max-width: 768px) {
     .main p {
         font-size: 0.8em;
@@ -11,6 +17,10 @@
 }
 
 @media (max-width: 768px) and (orientation: landscape) {
+    #header-image {
+        max-height: 120px;
+    }
+
     .main p {
         font-size: 0.8em;
         margin: 0 1.9em;

@@ -1,5 +1,6 @@
 "use strict";
 
+let img = document.getElementById('header-image');
 let main = document.getElementById("main");
 let nav = document.getElementById("nav");
 let navbutton = document.getElementById("navbutton");
@@ -34,6 +35,7 @@ window.addEventListener('scroll', function () {
 function toWork() {
     toMain();
     mainwork.classList.remove("display-none");
+    img.src = '../images/me1.webp';
     mainstudies.classList.add("display-none");
     maininterests.classList.add("display-none");
 }
@@ -41,6 +43,7 @@ function toWork() {
 function toStudies() {
     toMain();
     mainstudies.classList.remove("display-none");
+    img.src = 'images/me2.webp';
     mainwork.classList.add("display-none");
     maininterests.classList.add("display-none");
 }
