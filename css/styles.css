@@ -166,10 +166,38 @@
     #mainwork::before,
     #mainstudies::before,
     #maininterests::before {
-        background-attachment: fixed;
+        position: fixed;
+        top: 20vh;
         background-position-x: center;
-        background-position-y: 30vh;
-        background-size: contain;
+        background-size: cover;
+    }
+
+    #header-image {
+        z-index: 3;
+    }
+
+    #list {
+        z-index: 4;
+    }
+}
+
+@media (max-width: 768px) and (orientation: landscape)) {
+
+    #mainwork::before,
+    #mainstudies::before,
+    #maininterests::before {
+        position: fixed;
+        top: 5vh;
+        background-position-x: center;
+        background-size: 30%;
+    }
+
+    #header-image {
+        z-index: 3;
+    }
+
+    #list {
+        z-index: 4;
     }
 }
 
