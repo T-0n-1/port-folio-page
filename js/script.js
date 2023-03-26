@@ -3,6 +3,7 @@
 let img = document.getElementById('header-image');
 let main = document.getElementById("main");
 let nav = document.getElementById("nav");
+let gallery = document.getElementById("gallery");
 let navbutton = document.getElementById("navbutton");
 let menubutton = document.getElementById("menubutton");
 let mainbutton1 = document.getElementById("mainbutton1");
@@ -18,19 +19,6 @@ let mail = document.getElementById("mail");
 let github = document.getElementById("github");
 let linkedin = document.getElementById("linkedin");
 let home = document.getElementById("home");
-let lastScrollTop = 0;
-
-window.addEventListener('scroll', function () {
-    let currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    if (currentScrollTop > lastScrollTop) {
-        // Scrolling down
-        nav.classList.add('hide');
-    } else {
-        // Scrolling up
-        nav.classList.remove('hide');
-    }
-    lastScrollTop = currentScrollTop;
-});
 
 function toWork() {
     toMain();
@@ -58,6 +46,16 @@ function toInterests() {
 function toMain() {
     nav.style.display = "none";
     main.style.display = "grid";
+}
+
+function toGallery() {
+    nav.style.display = "none";
+    gallery.style.display = "flex";
+}
+
+function fromGallery() {
+    gallery.style.display = "none";
+    nav.style.display = "grid";
 }
 
 navbutton.addEventListener("click", function () {
@@ -140,8 +138,8 @@ linkedin.addEventListener("click", function (event) {
     linkedin.classList.add('heartbeat');
     setTimeout(function () {
         window.open(event.target.href, '_blank');
-        linkedin.classList.remove('heartbeat');
-    }, 1500);
+        linkedin.classList.remove('fadeOut');
+    }, 1200);
 });
 
 home.addEventListener("click", function (event) {
@@ -155,4 +153,14 @@ home.addEventListener("click", function (event) {
     }, 800);
 });
 
+// Select all images with class names that end with "-image"
+const images = document.querySelectorAll('[class$="-image"]');
+
+// Loop through images and add click event listener to each one
+images.forEach(image => {
+    image.addEventListener('click', () => {
+        // Code to run when image is clicked
+        toGallery();
+    });
+});
 //# sourceMappingURL=script.js.map

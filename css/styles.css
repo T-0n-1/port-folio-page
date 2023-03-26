@@ -243,6 +243,10 @@ a {
 
 /* Menu container */
 
+.menu-container {
+    cursor: pointer;
+}
+
 .work-text {
     grid-area: work-text;
     text-align: center;
@@ -360,5 +364,9 @@ a {
     .menu-container img {
         max-height: 50vh;
     }
+}
+
+.gallery-container {
+    display: none;
 }
 /*# sourceMappingURL=styles.css.map */
