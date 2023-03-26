@@ -181,15 +181,21 @@
     }
 }
 
-@media (max-width: 768px) and (orientation: landscape)) {
+@media (max-width: 768px) and (orientation: landscape) {
+
+    #mainwork,
+    #mainstudies,
+    #maininterests {
+        margin-top: 0;
+    }
 
     #mainwork::before,
     #mainstudies::before,
     #maininterests::before {
         position: fixed;
-        top: 5vh;
-        background-position-x: center;
-        background-size: 30%;
+        top: 10vh;
+        background-position: center top;
+        background-size: contain;
     }
 
     #header-image {
