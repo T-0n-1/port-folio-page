@@ -784,6 +784,19 @@
       "ou" : "lpckwebp-default",
       "rq" : 75
     },
+    "\/images\/photo album.png" : {
+      "ft" : 32768,
+      "iS" : 1513333,
+      "oA" : 0,
+      "oAP" : "\/images\/photo album.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-photo",
+      "q" : 90,
+      "rq" : 75
+    },
     "\/index.html" : {
       "cB" : 0,
       "ft" : 8192,

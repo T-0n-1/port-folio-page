@@ -366,7 +366,71 @@ a {
     }
 }
 
+.gallery-button {
+    grid-area: button;
+}
+
+.gallery-box1 {
+    grid-area: box1;
+}
+
+.gallery-box2 {
+    grid-area: box2;
+}
+
+.gallery-box3 {
+    grid-area: box3;
+}
+
+.gallery-box4 {
+    grid-area: box4;
+}
+
+.gallery-box5 {
+    grid-area: box5;
+}
+
+.gallery-box6 {
+    grid-area: box6;
+}
+
 .gallery-container {
     display: none;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        'button button'
+        'box1 box2'
+        'box3 box4'
+        'box5 box6';
+    gap: 10px;
+    height: 100vh;
+}
+
+.gallery-container::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../images/photo\ album.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.2;
+    z-index: -1;
+}
+
+@media (max-width: 768px) and (orientation: landscape) {
+    .gallery-container {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+            'button button button'
+            'box1 box2 box3'
+            'box4 box5 box6';
+    }
 }
 /*# sourceMappingURL=styles.css.map */
