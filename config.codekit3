@@ -725,6 +725,19 @@
       "q" : 90,
       "rq" : 75
     },
+    "\/images\/gallery.png" : {
+      "ft" : 32768,
+      "iS" : 54978,
+      "oA" : 0,
+      "oAP" : "\/images\/gallery.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-photo",
+      "q" : 90,
+      "rq" : 75
+    },
     "\/images\/interests.png" : {
       "ft" : 32768,
       "iS" : 1348245,
@@ -841,6 +854,32 @@
       "iS" : 1513333,
       "oA" : 0,
       "oAP" : "\/images\/photo album.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-photo",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/images\/photo.png" : {
+      "ft" : 32768,
+      "iS" : 44837,
+      "oA" : 0,
+      "oAP" : "\/images\/photo.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-photo",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/images\/scroll.png" : {
+      "ft" : 32768,
+      "iS" : 54403,
+      "oA" : 0,
+      "oAP" : "\/images\/scroll.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
