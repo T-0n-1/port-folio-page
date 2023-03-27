@@ -4,6 +4,7 @@ let img = document.getElementById('header-image');
 let main = document.getElementById("main");
 let nav = document.getElementById("nav");
 let gallery = document.getElementById("gallery");
+let gallerybutton = document.getElementById("gallery-button");
 let navbutton = document.getElementById("navbutton");
 let menubutton = document.getElementById("menubutton");
 let mainbutton1 = document.getElementById("mainbutton1");
@@ -162,5 +163,13 @@ images.forEach(image => {
         // Code to run when image is clicked
         toGallery();
     });
+});
+
+gallerybutton.addEventListener("click", function () {
+    gallerybutton.style.transform = 'rotate(360deg)';
+    setTimeout(function () {
+        fromGallery();
+        gallerybutton.style.transform = 'none';
+    }, 700);
 });
 //# sourceMappingURL=script.js.map
