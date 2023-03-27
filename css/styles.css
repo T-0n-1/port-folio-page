@@ -501,5 +501,7 @@ a {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    border: 3px solid rgb(212, 115, 31);
+    border-radius: 10px;
 }
 /*# sourceMappingURL=styles.css.map */
