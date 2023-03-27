@@ -123,15 +123,15 @@
 }
 
 #mainwork::before {
-    background-image: url('../images/kai.png');
+    background-image: url('../images/kai.webp');
 }
 
 #mainstudies::before {
-    background-image: url('../images/coder.png');
+    background-image: url('../images/coder.webp');
 }
 
 #maininterests::before {
-    background-image: url('../images/interests.png');
+    background-image: url('../images/interests.webp');
 }
 
 @media (max-width: 768px) {

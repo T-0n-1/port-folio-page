@@ -249,7 +249,7 @@ window.addEventListener('resize', () => {
 // Set array of image URLs
 const imageUrls = [];
 for (let i = 1; i <= 49; i++) {
-    imageUrls.push(`image${i}.jpg`);
+    imageUrls.push(`image${i}.webp`);
 }
 
 let shownImageUrls = []; // Keep track of image URLs that have been shown
