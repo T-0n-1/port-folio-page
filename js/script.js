@@ -186,6 +186,8 @@ for (let i = 1; i <= 49; i++) {
     imageUrls.push(`image${i}.jpg`);
 }
 
+let shownImageUrls = []; // Keep track of image URLs that have been shown
+
 // Add event listener for scroll event
 window.addEventListener('scroll', () => {
     // Get current scroll position
@@ -201,8 +203,17 @@ window.addEventListener('scroll', () => {
 
         // Loop through the shuffled array and add flipped class with delay to each element
         shuffledFlipContainersArray.forEach((flipContainer) => {
-            // Get random image URL from array
-            const randomImageUrl = imageUrls[Math.floor(Math.random() * imageUrls.length)];
+            // Get a random image URL that has not been shown yet
+            let randomImageUrl = imageUrls[Math.floor(Math.random() * imageUrls.length)];
+            while (shownImageUrls.includes(randomImageUrl)) { // Loop until a unique image URL is found
+                randomImageUrl = imageUrls[Math.floor(Math.random() * imageUrls.length)];
+            }
+            shownImageUrls.push(randomImageUrl); // Add the image URL to the list of shown images
+
+            // If all image URLs have been shown, reset the list of shown images
+            if (shownImageUrls.length === imageUrls.length) {
+                shownImageUrls = [];
+            }
 
             // Set background image for front and back elements
             flipContainer.querySelector('.front').style.backgroundImage = `url('../gallery/${randomImageUrl}')`;
