@@ -15,6 +15,7 @@ let mainwork = document.getElementById("mainwork");
 let mainstudies = document.getElementById("mainstudies");
 let maininterests = document.getElementById("maininterests");
 let menuopen = false;
+let turnaround = false;
 let phone = document.getElementById("phone");
 let mail = document.getElementById("mail");
 let github = document.getElementById("github");
@@ -166,11 +167,19 @@ images.forEach(image => {
 });
 
 gallerybutton.addEventListener("click", function () {
-    gallerybutton.style.transform = 'rotate(360deg)';
-    setTimeout(function () {
-        fromGallery();
-        gallerybutton.style.transform = 'none';
-    }, 700);
+    if (turnaround == false) {
+        gallerybutton.style.transform = 'rotate(360deg)';
+        setTimeout(function () {
+            turnaround = true;
+            fromGallery();
+        }, 700);
+    } else {
+        gallerybutton.style.transform = 'rotate(-360deg)';
+        setTimeout(function () {
+            turnaround = false;
+            fromGallery();
+        }, 700);
+    }
 });
 
 /*FLIPPER*/
