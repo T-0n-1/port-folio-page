@@ -503,5 +503,15 @@ a {
     background-position: center;
     border: 3px solid rgb(212, 115, 31);
     border-radius: 10px;
+    overflow: hidden;
+}
+
+.front img {
+    display: block;
+    -o-object-fit: cover;
+    object-fit: cover;
+    transition: z-index 0.3s, -webkit-transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, z-index 0.3s;
+    transition: transform 0.3s ease-in-out, z-index 0.3s, -webkit-transform 0.3s ease-in-out;
 }
 /*# sourceMappingURL=styles.css.map */
