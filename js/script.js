@@ -51,7 +51,7 @@ function toMain() {
 
 function toGallery() {
     nav.style.display = "none";
-    gallery.style.display = "flex";
+    gallery.style.display = "grid";
 }
 
 function fromGallery() {
@@ -172,4 +172,47 @@ gallerybutton.addEventListener("click", function () {
         gallerybutton.style.transform = 'none';
     }, 700);
 });
+
+/*FLIPPER*/
+// Get all flip containers
+const flipContainers = document.querySelectorAll('.flip-container');
+
+// Set scroll threshold for triggering flip
+const scrollThreshold = 20;
+
+// Set array of image URLs
+const imageUrls = [];
+for (let i = 1; i <= 49; i++) {
+    imageUrls.push(`image${i}.jpg`);
+}
+
+// Add event listener for scroll event
+window.addEventListener('scroll', () => {
+    // Get current scroll position
+    const scrollPosition = window.scrollY;
+
+    // If scroll position is greater than threshold, flip elements in random order
+    if (scrollPosition > scrollThreshold) {
+        // Create array of flip containers
+        const flipContainersArray = Array.from(flipContainers);
+
+        // Shuffle the array to get a random order
+        const shuffledFlipContainersArray = flipContainersArray.sort(() => Math.random() - 0.5);
+
+        // Loop through the shuffled array and add flipped class with delay to each element
+        shuffledFlipContainersArray.forEach((flipContainer, index) => {
+            // Get random image URL from array
+            const randomImageUrl = imageUrls[Math.floor(Math.random() * imageUrls.length)];
+
+            // Set background image for front and back elements
+            flipContainer.querySelector('.front').style.backgroundImage = `url('../gallery/${randomImageUrl}')`;
+
+            // Add flipped class and delay to flip container
+            setTimeout(() => {
+                flipContainer.classList.add('flipped', `delay-${index + 1}`);
+            }, index * 200);
+        });
+    }
+});
+
 //# sourceMappingURL=script.js.map
