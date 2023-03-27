@@ -200,17 +200,12 @@ window.addEventListener('scroll', () => {
         const shuffledFlipContainersArray = flipContainersArray.sort(() => Math.random() - 0.5);
 
         // Loop through the shuffled array and add flipped class with delay to each element
-        shuffledFlipContainersArray.forEach((flipContainer, index) => {
+        shuffledFlipContainersArray.forEach((flipContainer) => {
             // Get random image URL from array
             const randomImageUrl = imageUrls[Math.floor(Math.random() * imageUrls.length)];
 
             // Set background image for front and back elements
             flipContainer.querySelector('.front').style.backgroundImage = `url('../gallery/${randomImageUrl}')`;
-
-            // Add flipped class and delay to flip container
-            setTimeout(() => {
-                flipContainer.classList.add('flipped', `delay-${index + 1}`);
-            }, index * 200);
         });
     }
 });
