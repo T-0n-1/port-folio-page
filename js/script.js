@@ -177,8 +177,15 @@ gallerybutton.addEventListener("click", function () {
 // Get all flip containers
 const flipContainers = document.querySelectorAll('.flip-container');
 
-// Set scroll threshold for triggering flip
-const scrollThreshold = 20;
+// Set scroll threshold for triggering change
+let scrollThreshold = 27; // Set a default scroll threshold
+
+const smallScreenScrollThreshold = 100; // Set a smaller scroll threshold for small screens
+
+// Check if screen is smaller than 768 pixels
+if (window.matchMedia('(max-width: 768px)').matches) {
+    scrollThreshold = smallScreenScrollThreshold;
+}
 
 // Set array of image URLs
 const imageUrls = [];
