@@ -9,6 +9,14 @@
   ],
   "creatorBuild" : "34472",
   "files" : {
+    "\/.cpanel.yml" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/.cpanel.yml",
+      "oF" : 0
+    },
     "\/.gitignore" : {
       "cB" : 0,
       "ft" : 8192,
@@ -16,6 +24,14 @@
       "oA" : 0,
       "oAP" : "\/.gitignore",
       "oF" : 0
+    },
+    "\/.vscode\/settings.json" : {
+      "ft" : 524288,
+      "oA" : 0,
+      "oAP" : "\/.vscode\/settings.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
     },
     "\/css\/styles.css" : {
       "aP" : 1,
