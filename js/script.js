@@ -186,8 +186,15 @@ gallerybutton.addEventListener("click", function () {
 // Get all flip containers
 const flipContainers = document.querySelectorAll('.flip-container');
 
-// Set scroll threshold for triggering change
-let scrollThreshold = 27; // Set a default scroll threshold
+// Set a default scroll threshold
+let scrollThreshold = 12;
+
+// Check if the browser is Safari
+if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
+    // This is Safari
+    // Add your Safari-specific code here
+    scrollThreshold = 27;
+}
 
 const smallScreenScrollThreshold = 100; // Set a smaller scroll threshold for small screens
 
