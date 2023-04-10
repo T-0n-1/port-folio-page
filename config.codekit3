@@ -722,6 +722,19 @@
       "ou" : "lpckwebp-default",
       "rq" : 75
     },
+    "\/images\/og_me.png" : {
+      "ft" : 32768,
+      "iS" : 124698,
+      "oA" : 0,
+      "oAP" : "\/images\/og_me.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-photo",
+      "q" : 90,
+      "rq" : 75
+    },
     "\/images\/photo.webp" : {
       "ft" : 8388608,
       "iS" : 8418,
