@@ -1,35 +1,47 @@
-# Toni Mertanen
+# Portfolio Page
 
-Welcome to my personal website! Here you can learn more about my professional journey, studies, and interests.
+## Introduction
+This repository contains my personal portfolio page, created using modern web development techniques, including CSS grid.
 
-## About Me
+## Table of Contents
+- [Introduction](#introduction)
+- [Getting Started](#getting-started)
+- [Key Features](#key-features)
+- [Technologies Used](#technologies-used)
+- [Author](#author)
 
-I am a dedicated father, tech enthusiast, and entrepreneur with over two decades of experience in the retail industry. My journey began in retail, evolving from various roles to becoming a K-retailer entrepreneur. I am currently exploring new opportunities in technology and coding.
+## Getting Started
 
-## Professional Experience
+### Prerequisites
+- A web browser
 
-- Extensive background in human resource and data-driven management.
-- Expertise in account and assortment management, stakeholder collaboration, and customer service.
-- Proven leadership in stressful environments, making swift decisions with a solution-based approach.
+### Installation
+1. Clone the repository:
+  ```bash
+  git clone https://github.com/T-0n-1/port-folio-page.git
+```
+2. Navigate to the project directory:
+  ```bash
+  cd port-folio-page
+```
+3. Open the index.html file in your web browser.
 
-## Studies
+## Key Features
 
-I am pursuing a degree in Information and Communication Technology at LAB University of Applied Sciences. My studies include an internship in Kesko's AI unit, where I developed skills in Python programming and contributed to the assortment management application used by K-food stores.
+- Showcases professional experience and projects.
+- Interactive design with a responsive layout using CSS grid.
 
-## Interests
+## Technologies Used
 
-- **Reading:** Enjoys works by Richard K. Morgan, Patrick Rothfuss, William Gibson, Tom Clancy, and Stephen King.
-- **Outdoors:** Enthusiast of fat biking, hiking, and horseback riding, often capturing moments with drones and GoPro.
-- **Home Automation:** Passionate about automating home systems using Home Assistant.
-- **Coding:** Enjoys coding projects and exploring the capabilities of AI technologies like ChatGPT and GitHub Copilot.
+- HTML
+- CSS
+- JavaScript
+- Bootstrap
 
-## Tech Stack
+## Author
 
-This website is built using modern web development technologies:
-
-- **HTML5:** For the basic structure of the site.
-- **CSS3:** For styling and layout.
-- **JavaScript:** For interactivity and dynamic content.
-- **Bootstrap:** For responsive design and grid system.
+ToniM
+- LinkedIn: [Toni Mertanen](https://www.linkedin.com/in/toni-mertanen/)
+- GitHub: [T-0n-1](https://github.com/T-0n-1)
 
 For more information, visit my website: [tonimertanen.fi](https://tonimertanen.fi)
